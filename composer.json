@@ -1,0 +1,53 @@
+{
+  "name": "iexbase/tron-api-laravel",
+  "description": "Laravel package,  PHP API for interacting with Tron (Trx)",
+  "license": "MIT",
+  "type": "library",
+  "homepage": "https://github.com/iexbase/tron-api-laravel",
+  "authors": [
+    {
+      "name": "Shamsudin Serderov",
+      "email": "steein.shamsudin@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "iexbase/tron-api": "^3.0",
+    "illuminate/support": "^7.0|^8.0"
+  },
+
+  "require-dev": {
+    "orchestra/testbench": "^6.1",
+    "phpunit/phpunit": "^9.3"
+  },
+
+  "autoload": {
+    "psr-4": {
+      "IEXBase\\TronAPI\\Laravel\\": "src/"
+    }
+  },
+
+  "autoload-dev": {
+    "psr-4": {
+      "IEXBase\\TronAPI\\Laravel\\Tests\\": "tests/"
+    }
+  },
+
+  "extra": {
+    "laravel": {
+      "providers": [
+        "IEXBase\\TronAPI\\Laravel\\TronServiceProvider"
+      ],
+      "aliases": {
+        "TronAPI": "IEXBase\\TronAPI\\Laravel\\Facades\\TronAPI"
+      }
+    }
+  },
+
+  "config": {
+    "sort-packages": true
+  },
+
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
