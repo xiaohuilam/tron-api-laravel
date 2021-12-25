@@ -1,9 +1,9 @@
 {
-  "name": "iexbase/tron-api-laravel",
+  "name": "tronapi/laravel",
   "description": "Laravel package,  PHP API for interacting with Tron (Trx)",
   "license": "MIT",
   "type": "library",
-  "homepage": "https://github.com/iexbase/tron-api-laravel",
+  "homepage": "https://github.com/xiaohuilam/tron-api-laravel",
   "authors": [
     {
       "name": "Shamsudin Serderov",
